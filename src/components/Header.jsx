@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="p-4 shadow-sm">
+    <header className="p-4 shadow-sm absolute top-0 w-full">
       <nav className="flex justify-between items-center">
         <button className="bg-[#209cee] px-4 py-2 rounded-lg text-white font-bold hover:bg-[#0065a8]  transition ease-in-out delay-150 duration-300">
           <a
@@ -12,7 +12,9 @@ const Header = () => {
             GitHub 🔗
           </a>
         </button>
-        <h1 className="text-xl font-bold text-[#209cee]">Random Facts</h1>
+        <h1 className="text-xl font-bold text-[#209cee] text-center">
+          Random Facts
+        </h1>
         <button className="bg-[#209cee] px-4 py-2 rounded-lg text-white font-bold cursor-default hover:bg-[#0065a8] transition ease-in-out delay-150 duration-300">
           Made with ❣️
         </button>
