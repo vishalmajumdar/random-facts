@@ -7,10 +7,11 @@ const Facts = () => {
   ); // variable to store fact
 
   function getFact() {
+    setFact("😢 Loading...");
     fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
       .then((res) => res.json())
       .then((data) => setFact(data.text))
-      .catch((err) => console.log(err));
+      .catch((err) => setFact("😓 Failed to Get Fact"));
   } // function to get fact from external API and store in the variable
 
   return (
