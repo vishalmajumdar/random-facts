@@ -11,9 +11,6 @@ const Body = () => {
         You can generate random useless, but true facts
       </p>
       <Facts></Facts>
-      <button className="bg-[#209cee] mt-4 px-4 py-2 rounded-lg text-white font-bold hover:bg-[#0065a8] transition ease-in-out delay-150 duration-300">
-        Generate
-      </button>
     </section>
   );
 };
