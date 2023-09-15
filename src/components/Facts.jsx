@@ -1,5 +1,10 @@
 import React from "react";
 
+fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
+  .then((res) => res.json())
+  .then((data) => console.log(data.text))
+  .catch((err) => console.log(err));
+
 const Facts = () => {
   return (
     <>
